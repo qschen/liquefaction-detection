@@ -1,0 +1,19 @@
+This repository contains code and sample data accompanying the paper by Zhan and Chen (2021), "An Accelerogram-based Method for Quick Assessment of Liquefaction Occurrence", Journal of Geotechnical and Geoenvironmental Engineering. Please cite and credit this publication.
+
+
+Directory
+1. "Input" folder
+This is where you put the input accelerogram data file for the model to process. Two sample accellerogram data files are included. 
+
+The required format of the data file:
+1) The data file is in *.csv format
+2) There are four columns (from left to right): time vector, NS, EW, 
+and UD component accelerograms (no headings). 
+3) The units of the time vector and accelerogram are second and g (gravitational acceleration), respectively.
+
+2. "Output" folder
+This is where all output files (tables and figures for liquefaction classification and signal processing) are stored after the program is executed.
+
+3. "main_function.m" is the main function to run the program, perform the calculations, and output results. 
+
+4. "LowFrequencyPortion.m" and "FrequencyDropRatio.m" are functions called by "main_function.m" to perform necessary intermediate calculation steps.
